@@ -9,6 +9,7 @@ int CalorieCount::GetBestElf(std::string filePath)
 {
 	std::ifstream myFile(filePath);
 	std::string myText;
+	std::vector<int> totals;
 	int fin = 0;
 
 	int curr = 0;
@@ -17,7 +18,7 @@ int CalorieCount::GetBestElf(std::string filePath)
 	{
 		if (myText.empty())
 		{
-			fin = curr > fin ? curr : fin;
+			totals.push_back(curr);
 			curr = 0;
 		}
 		else
@@ -27,6 +28,13 @@ int CalorieCount::GetBestElf(std::string filePath)
 	}
 
 	myFile.close();
+
+	sort(totals.begin(), totals.end(), std::greater<int>());
+
+	for (int i = 0; i < 3; ++i)
+	{
+		fin += totals.at(i);
+	}
 
 	return fin;
 }
