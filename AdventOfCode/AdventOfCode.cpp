@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
+#include "CalorieCount.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Calorie count:\n";
+
+    CalorieCount counter;
+
+    int finOut = counter.GetBestElf("Cals.txt");
+
+    std::cout << finOut << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
