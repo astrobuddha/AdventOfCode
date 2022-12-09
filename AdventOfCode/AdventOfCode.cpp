@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "CalorieCount.h"
+#include "RpsScorer.h"
 
 int main()
 {
@@ -12,7 +13,16 @@ int main()
 
     int finOut = counter.GetBestElf("Cals.txt");
 
-    std::cout << finOut << "\n";
+    std::cout << finOut << '\n';
+
+    std::cout << "Rock paper scissors:\n";
+
+    RpsScorer scorer;
+
+    int totalScore = scorer.TotalScore("rpsMatches.txt");
+
+    std::cout << totalScore << '\n';
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

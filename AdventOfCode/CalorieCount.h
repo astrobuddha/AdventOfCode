@@ -7,5 +7,5 @@
 class CalorieCount
 {
 public:
-	int GetBestElf(std::string filePath);
+	int GetBestElf(const std::string filePath);
 };

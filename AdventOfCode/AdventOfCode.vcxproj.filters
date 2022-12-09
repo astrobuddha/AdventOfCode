@@ -21,14 +21,23 @@
     <ClCompile Include="CalorieCount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RpsScorer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CalorieCount.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="RpsScorer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Cals.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="RpsMatches.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 
-int CalorieCount::GetBestElf(std::string filePath) 
+int CalorieCount::GetBestElf(const std::string filePath) 
 {
 	std::ifstream myFile(filePath);
 	std::string myText;
